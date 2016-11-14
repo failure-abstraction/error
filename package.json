@@ -1,6 +1,6 @@
 {
   "name": "aureooms-js-error",
-  "description": "Collections library for JavaScript",
+  "description": "Error objects for JavaScript",
   "version": "2.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
@@ -22,16 +22,8 @@
   "bugs": {
     "url": "https://github.com/aureooms/js-error/issues"
   },
-  "dependencies": {
-    "aureooms-js-compare": "^1.4.5",
-    "aureooms-js-dll": "^6.0.10",
-    "aureooms-js-itertools": "^3.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "aureooms-js-functools": "^2.0.3",
-    "aureooms-js-number": "^3.0.0",
-    "aureooms-js-operator": "^1.0.2",
-    "aureooms-js-sort": "^7.0.0",
     "ava": "^0.16.0",
     "babel-cli": "^6.18.0",
     "babel-polyfill": "^6.16.0",
@@ -43,18 +35,9 @@
   },
   "homepage": "http://aureooms.github.io/js-error/",
   "keywords": [
-    "bisect",
-    "collection",
-    "collections",
-    "count",
-    "counter",
-    "dict",
-    "hash",
-    "heapq",
+    "error",
     "javascript",
-    "js",
-    "list",
-    "map"
+    "js"
   ],
   "license": "AGPL-3.0",
   "main": "lib/index.js",
