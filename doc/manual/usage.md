@@ -8,7 +8,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const number = require( 'aureooms-js-error' ) ;
+const number = require( '@aureooms/js-error' ) ;
 // or
-import number from 'aureooms-js-error' ;
+import number from '@aureooms/js-error' ;
 ```

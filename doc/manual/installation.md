@@ -4,10 +4,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:aureooms-js-error
+jspm install npm:@aureooms/js-error
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-error --save
+npm install @aureooms/js-error --save
 ```
