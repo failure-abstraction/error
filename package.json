@@ -1,5 +1,5 @@
 {
-  "name": "aureooms-js-error",
+  "name": "@aureooms/js-error",
   "description": "Error objects for JavaScript",
   "version": "3.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
