@@ -1,28 +1,40 @@
 import test from 'ava' ;
 
 import {
+	Error ,
+	TypeError ,
+	SyntaxError ,
 	IndexError ,
 	KeyError ,
 	NotImplementedError ,
-	TypeError ,
 	ValueError ,
+	StopIteration ,
 } from '../../src' ;
+
+const errors = [
+	Error ,
+	TypeError ,
+	SyntaxError ,
+	IndexError ,
+	KeyError ,
+	NotImplementedError ,
+	ValueError ,
+	StopIteration ,
+] ;
+
+function willThrow ( error ) {
+	return function () { throw new error(); } ;
+}
 
 test( 'error' , t => {
 
 	const r = Math.random();
 	const s = r.toString();
 
-	t.truthy( new IndexError( ) ) ;
-	t.truthy( new KeyError( ) ) ;
-	t.truthy( new NotImplementedError( ) ) ;
-	t.truthy( new TypeError( ) ) ;
-	t.truthy( new ValueError( ) ) ;
-
-	t.is( ( new IndexError( r ) ).message , s ) ;
-	t.is( ( new KeyError( r ) ).message , s ) ;
-	t.is( ( new NotImplementedError( r ) ).message , s ) ;
-	t.is( ( new TypeError( r ) ).message , s ) ;
-	t.is( ( new ValueError( r ) ).message , s ) ;
+	for ( const error of errors ) {
+		t.truthy( new error( ) ) ;
+		t.is( ( new error( r ) ).message , s ) ;
+		t.throws( willThrow(error) , error ) ;
+	}
 
 }) ;

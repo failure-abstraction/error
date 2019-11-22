@@ -1,6 +1,3 @@
+import customError from './customError' ;
 
-export default function IndexError ( message = '' ) {
-
-	this.message = message.toString() ;
-
-}
+export default customError('IndexError') ;

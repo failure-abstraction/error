@@ -1,6 +1,3 @@
+import customError from './customError' ;
 
-export default function NotImplementedError ( message = '' ) {
-
-	this.message = message.toString() ;
-
-}
+export default customError('NotImplementedError') ;

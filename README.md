@@ -1,26 +1,34 @@
-[js-error](http://aureooms.github.io/js-error)
+[@aureooms/js-error](http://aureooms.github.io/js-error)
 ==
 
-Error objects for JavaScript. Parent is
-[js-library](https://github.com/aureooms/js-library).
+Error objects for JavaScript.
+See [docs](https://aureooms.github.io/js-error/index.html).
+Parent is [js-library](https://github.com/aureooms/js-library).
 
 ```js
 import {
+	Error ,
+	SyntaxError ,
 	IndexError ,
 	KeyError ,
 	NotImplementedError ,
 	TypeError ,
 	ValueError ,
+	StopIteration ,
 } from '@aureooms/js-error' ;
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-error.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-error/master/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@aureooms/js-error.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-error)
-[![Build Status](https://img.shields.io/travis/aureooms/js-error.svg?style=flat)](https://travis-ci.org/aureooms/js-error)
-[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-error.svg?style=flat)](https://coveralls.io/r/aureooms/js-error)
-[![Dependencies Status](https://img.shields.io/david/aureooms/js-error.svg?style=flat)](https://david-dm.org/aureooms/js-error#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-error.svg?style=flat)](https://david-dm.org/aureooms/js-error#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-error.svg?style=flat)](https://codeclimate.com/github/aureooms/js-error)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-error.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-error)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-error.svg?style=flat)](https://github.com/aureooms/js-error/issues)
+[![License](https://img.shields.io/github/license/aureooms/js-error.svg)](https://raw.githubusercontent.com/aureooms/js-error/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-error.svg)](https://www.npmjs.org/package/@aureooms/js-error)
+[![Build](https://img.shields.io/travis/aureooms/js-error/master.svg)](https://travis-ci.org/aureooms/js-error/branches)
+[![Dependencies](https://img.shields.io/david/aureooms/js-error.svg)](https://david-dm.org/aureooms/js-error)
+[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-error.svg)](https://david-dm.org/aureooms/js-error?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-error.svg)](https://github.com/aureooms/js-error/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-error.svg)](https://www.npmjs.org/package/@aureooms/js-error)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/github/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/github/aureooms/js-error.svg)](https://codecov.io/gh/aureooms/js-error)
+[![Code coverage (clim)](https://img.shields.io/codeclimate/coverage-letter/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/test_coverage_new_code)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/technical_debt)
 [![Documentation](https://aureooms.github.io/js-error/badge.svg)](https://aureooms.github.io/js-error/source.html)
