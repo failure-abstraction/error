@@ -1,14 +1,15 @@
-The code needs a ES2015+ polyfill to work, for example
-[babel-polyfill](https://babeljs.io/docs/usage/polyfill).
+# Usage
+
+First, require the polyfill at the entry point of your application
 ```js
-require( 'babel-polyfill' ) ;
+require( '@babel/polyfill' ) ;
 // or
-import 'babel-polyfill' ;
+import '@babel/polyfill' ;
 ```
 
-Then
+Then, import the library where needed
 ```js
-const number = require( '@aureooms/js-error' ) ;
+const { ... } = require( '@aureooms/js-error' ) ;
 // or
-import number from '@aureooms/js-error' ;
+import { ... } from '@aureooms/js-error' ;
 ```
