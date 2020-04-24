@@ -34,7 +34,7 @@ test( 'error' , t => {
 	for ( const error of errors ) {
 		t.truthy( new error( ) ) ;
 		t.is( ( new error( r ) ).message , s ) ;
-		t.throws( willThrow(error) , error ) ;
+		t.throws( willThrow(error) , { instanceOf: error } ) ;
 	}
 
 }) ;
