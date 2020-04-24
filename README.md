@@ -27,8 +27,8 @@ import {
 [![Downloads](https://img.shields.io/npm/dm/@aureooms/js-error.svg)](https://www.npmjs.org/package/@aureooms/js-error)
 
 [![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/github/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/github/aureooms/js-error.svg)](https://codecov.io/gh/aureooms/js-error)
-[![Code coverage (clim)](https://img.shields.io/codeclimate/coverage-letter/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/test_coverage_new_code)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-error/master.svg)](https://codecov.io/gh/aureooms/js-error)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-error/badge.svg)](https://aureooms.github.io/js-error/source.html)
+[![Documentation](http://aureooms.github.io/js-error//badge.svg)](http://aureooms.github.io/js-error//source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-error)](https://bundlephobia.com/result?p=@aureooms/js-error)
