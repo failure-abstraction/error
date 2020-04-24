@@ -72,8 +72,8 @@
     "build": "rm -rf lib && babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
     "esdoc": "esdoc",
-    "prepublish": "npm run build",
     "release": "np",
-    "test": "ava"
+    "test": "ava",
+    "prepare": "npm run build"
   }
 }
