@@ -13,7 +13,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-tape"
+          "title": "@aureooms/js-error"
         },
         "test": {
           "type": "ava",
@@ -41,12 +41,6 @@
       "option": {
         "enable": true,
         "scripts": ["./doc/scripts/header.js"]
-      }
-    },
-    {
-      "name": "esdoc-ecmascript-proposal-plugin",
-      "option": {
-        "all": true
       }
     }
   ]
