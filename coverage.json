@@ -1,34 +1,20 @@
 {
   "coverage": "0%",
-  "expectCount": 4,
+  "expectCount": 2,
   "actualCount": 0,
   "files": {
-    "src/IndexError.js": {
+    "src/customError.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        2
+        4
       ]
     },
-    "src/KeyError.js": {
+    "src/extendError.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        2
-      ]
-    },
-    "src/NotImplementedError.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
-    },
-    "src/ValueError.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
+        1
       ]
     }
   }
