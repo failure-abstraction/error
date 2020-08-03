@@ -4,7 +4,7 @@ export default function extendError ( parent, name ) {
 
 	const CustomError = function (...params) {
 	  const instance = new Error(...params);
-	  instance.name = 'IndexError';
+	  instance.name = name;
 	  Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
 	  if (Error.captureStackTrace) {
 		Error.captureStackTrace(instance, CustomError);
