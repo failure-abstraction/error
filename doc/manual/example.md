@@ -1,6 +1,6 @@
 # Examples
 
-> More examples in [the test files](https://github.com/aureooms/js-error/tree/master/test/src).
+> More examples in [the test files](https://github.com/aureooms/js-error/tree/main/test/src).
 
 
 ## StopIteration
