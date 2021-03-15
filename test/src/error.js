@@ -22,8 +22,8 @@ const errors = [
 	StopIteration ,
 ] ;
 
-function willThrow ( error ) {
-	return function () { throw new error(); } ;
+function willThrow ( SpecificError ) {
+	return function () { throw new SpecificError(); } ;
 }
 
 test( 'error' , t => {
@@ -31,10 +31,10 @@ test( 'error' , t => {
 	const r = Math.random();
 	const s = r.toString();
 
-	for ( const error of errors ) {
-		t.truthy( new error( ) ) ;
-		t.is( ( new error( r ) ).message , s ) ;
-		t.throws( willThrow(error) , { instanceOf: error } ) ;
+	for ( const SpecificError of errors ) {
+		t.truthy( new SpecificError( ) ) ;
+		t.is( ( new SpecificError( r ) ).message , s ) ;
+		t.throws( willThrow(SpecificError) , { instanceOf: SpecificError } ) ;
 	}
 
 }) ;
