@@ -1,4 +1,5 @@
 import Error from './Error' ;
 import extendError from './extendError' ;
 
-export default name => extendError( Error , name ) ;
+const customError = name => extendError( Error , name ) ;
+export default customError;
