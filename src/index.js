@@ -1,30 +1,23 @@
-import Error from './Error' ;
-import SyntaxError from './SyntaxError' ;
-import TypeError from './TypeError' ;
-import IndexError from './IndexError' ;
-import KeyError from './KeyError' ;
-import NotImplementedError from './NotImplementedError' ;
-import ValueError from './ValueError' ;
-import StopIteration from './StopIteration' ;
-
-export default {
-	Error ,
-	SyntaxError ,
-	TypeError ,
-	IndexError ,
-	KeyError ,
-	NotImplementedError ,
-	ValueError ,
-	StopIteration ,
-} ;
+import Error from './Error.js';
+import IndexError from './IndexError.js';
+import KeyError from './KeyError.js';
+import NotImplementedError from './NotImplementedError.js';
+import StopIteration from './StopIteration.js';
+import SyntaxError from './SyntaxError.js';
+import TypeError from './TypeError.js';
+import ValueError from './ValueError.js';
+import customError from './customError.js';
+import extendError from './extendError.js';
 
 export {
-	Error ,
-	SyntaxError ,
-	TypeError ,
-	IndexError ,
-	KeyError ,
-	NotImplementedError ,
-	ValueError ,
-	StopIteration ,
-} ;
+	Error,
+	IndexError,
+	KeyError,
+	NotImplementedError,
+	StopIteration,
+	SyntaxError,
+	TypeError,
+	ValueError,
+	customError,
+	extendError,
+};
