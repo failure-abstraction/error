@@ -22,19 +22,19 @@ const errors = [
 	StopIteration ,
 ] ;
 
-function willThrow ( SpecificError ) {
-	return function () { throw new SpecificError(); } ;
-}
-
-test( 'error' , t => {
+const macro = (t, SpecificError) => {
 
 	const r = Math.random();
 	const s = r.toString();
 
-	for ( const SpecificError of errors ) {
-		t.truthy( new SpecificError( ) ) ;
-		t.is( ( new SpecificError( r ) ).message , s ) ;
-		t.throws( willThrow(SpecificError) , { instanceOf: SpecificError } ) ;
-	}
+	t.truthy( new SpecificError( ) ) ;
+	t.is( ( new SpecificError( r ) ).message , s ) ;
+	t.throws( () => { throw new SpecificError() ; } , { instanceOf: SpecificError } ) ;
 
-}) ;
+};
+
+macro.title = (title, SpecificError) => title || (new SpecificError()).name;
+
+for (const error of errors) {
+	test(macro, error);
+}
