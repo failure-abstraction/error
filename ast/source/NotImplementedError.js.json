@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 95,
+  "end": 96,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 95,
+    "end": 96,
     "loc": {
       "start": {
         "line": 1,
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 41,
+        "end": 43,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 41
+            "column": 43
           }
         },
         "specifiers": [
@@ -79,7 +79,7 @@
         "source": {
           "type": "StringLiteral",
           "start": 24,
-          "end": 39,
+          "end": 42,
           "loc": {
             "start": {
               "line": 1,
@@ -87,20 +87,20 @@
             },
             "end": {
               "line": 1,
-              "column": 39
+              "column": 42
             }
           },
           "extra": {
-            "rawValue": "./customError",
-            "raw": "'./customError'"
+            "rawValue": "./customError.js",
+            "raw": "'./customError.js'"
           },
-          "value": "./customError"
+          "value": "./customError.js"
         }
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 43,
-        "end": 94,
+        "start": 45,
+        "end": 95,
         "loc": {
           "start": {
             "line": 3,
@@ -108,13 +108,13 @@
           },
           "end": {
             "line": 3,
-            "column": 51
+            "column": 50
           }
         },
         "declaration": {
           "type": "CallExpression",
-          "start": 58,
-          "end": 92,
+          "start": 60,
+          "end": 94,
           "loc": {
             "start": {
               "line": 3,
@@ -127,8 +127,8 @@
           },
           "callee": {
             "type": "Identifier",
-            "start": 58,
-            "end": 69,
+            "start": 60,
+            "end": 71,
             "loc": {
               "start": {
                 "line": 3,
@@ -145,8 +145,8 @@
           "arguments": [
             {
               "type": "StringLiteral",
-              "start": 70,
-              "end": 91,
+              "start": 72,
+              "end": 93,
               "loc": {
                 "start": {
                   "line": 3,
@@ -266,9 +266,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./customError",
+      "value": "./customError.js",
       "start": 24,
-      "end": 39,
+      "end": 42,
       "loc": {
         "start": {
           "line": 1,
@@ -276,7 +276,7 @@
         },
         "end": {
           "line": 1,
-          "column": 39
+          "column": 42
         }
       }
     },
@@ -293,16 +293,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 40,
-      "end": 41,
+      "start": 42,
+      "end": 43,
       "loc": {
         "start": {
           "line": 1,
-          "column": 40
+          "column": 42
         },
         "end": {
           "line": 1,
-          "column": 41
+          "column": 43
         }
       }
     },
@@ -321,8 +321,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 43,
-      "end": 49,
+      "start": 45,
+      "end": 51,
       "loc": {
         "start": {
           "line": 3,
@@ -349,8 +349,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 50,
-      "end": 57,
+      "start": 52,
+      "end": 59,
       "loc": {
         "start": {
           "line": 3,
@@ -375,8 +375,8 @@
         "binop": null
       },
       "value": "customError",
-      "start": 58,
-      "end": 69,
+      "start": 60,
+      "end": 71,
       "loc": {
         "start": {
           "line": 3,
@@ -400,8 +400,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 69,
-      "end": 70,
+      "start": 71,
+      "end": 72,
       "loc": {
         "start": {
           "line": 3,
@@ -427,8 +427,8 @@
         "updateContext": null
       },
       "value": "NotImplementedError",
-      "start": 70,
-      "end": 91,
+      "start": 72,
+      "end": 93,
       "loc": {
         "start": {
           "line": 3,
@@ -452,8 +452,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 91,
-      "end": 92,
+      "start": 93,
+      "end": 94,
       "loc": {
         "start": {
           "line": 3,
@@ -478,16 +478,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 93,
-      "end": 94,
+      "start": 94,
+      "end": 95,
       "loc": {
         "start": {
           "line": 3,
-          "column": 50
+          "column": 49
         },
         "end": {
           "line": 3,
-          "column": 51
+          "column": 50
         }
       }
     },
@@ -504,8 +504,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 95,
-      "end": 95,
+      "start": 96,
+      "end": 96,
       "loc": {
         "start": {
           "line": 4,

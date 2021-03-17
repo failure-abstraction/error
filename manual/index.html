@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-error.git"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-error"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
@@ -86,9 +86,9 @@ or <a href="https://jspm.org/docs">jspm</a>.</p><h3>yarn</h3><pre><code class="l
     </div>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Usage</h1><p>First, require the polyfill at the entry point of your application</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;@babel/polyfill&apos; ) ;
+        <div data-ice="card"><h1>Usage</h1><p>First, require the polyfill at the entry point of your application</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;regenerator-runtime/runtime&apos; ) ;
 // or
-import &apos;@babel/polyfill&apos; ;</code>
+import &apos;regenerator-runtime/runtime.js&apos; ;</code>
 </code></pre><p>Then, import the library where needed</p><pre><code class="lang-js"><code class="source-code prettyprint">const { ... } = require( &apos;@aureooms/js-error&apos; ) ;
 // or
 import { ... } from &apos;@aureooms/js-error&apos; ;</code>
@@ -99,7 +99,7 @@ import { ... } from &apos;@aureooms/js-error&apos; ;</code>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
         <div data-ice="card"><h1>Examples</h1><blockquote>
-<p>More examples in <a href="https://github.com/aureooms/js-error/tree/master/test/src">the test files</a>.</p>
+<p>More examples in <a href="https://github.com/aureooms/js-error/tree/main/test/src">the test files</a>.</p>
 </blockquote><h2>StopIteration</h2><pre><code class="lang-js"><code class="source-code prettyprint">import { iter , next } from &apos;@aureooms/js-itertools&apos; ;
 import { StopIteration } from &apos;@aureooms/js-error&apos; ;
 
