@@ -21,12 +21,7 @@ export default function extendError(parent, name) {
 		},
 	});
 
-	if (Object.setPrototypeOf) {
-		Object.setPrototypeOf(CustomError, Error);
-	} else {
-		// eslint-disable-next-line no-proto
-		CustomError.__proto__ = Error;
-	}
+	Object.setPrototypeOf(CustomError, Error);
 
 	return CustomError;
 }
