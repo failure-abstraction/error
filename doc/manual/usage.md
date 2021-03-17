@@ -2,9 +2,9 @@
 
 First, require the polyfill at the entry point of your application
 ```js
-require( '@babel/polyfill' ) ;
+require( 'regenerator-runtime/runtime' ) ;
 // or
-import '@babel/polyfill' ;
+import 'regenerator-runtime/runtime' ;
 ```
 
 Then, import the library where needed
