@@ -51,6 +51,8 @@
     "cover": "c8 --all --src src --reporter=lcov npm test",
     "debug": "NODE_ENV=debug npm run test -- -st --fail-fast",
     "install-hooks": "husky install",
+    "lint": "xo",
+    "lint-and-fix": "npm run lint -- --fix",
     "lint-config": "fixpack --dryRun",
     "lint-config-and-fix": "fixpack || fixpack",
     "postinstall": "npm run install-hooks",
@@ -83,7 +85,8 @@
     "microbundle": "0.13.0",
     "np": "7.4.0",
     "pinst": "2.1.6",
-    "power-assert": "1.6.1"
+    "power-assert": "1.6.1",
+    "xo": "0.38.2"
   },
   "ava": {
     "files": [
@@ -177,5 +180,33 @@
         ]
       }
     }
+  },
+  "prettier": {
+    "trailingComma": "all"
+  },
+  "xo": {
+    "prettier": true,
+    "plugins": [
+      "unicorn"
+    ],
+    "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "cases": {
+            "camelCase": true,
+            "pascalCase": true
+          }
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "doc/**"
+        ],
+        "env": "browser"
+      }
+    ]
   }
 }
