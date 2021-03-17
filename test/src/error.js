@@ -9,7 +9,7 @@ import {
 	NotImplementedError ,
 	ValueError ,
 	StopIteration ,
-} from '../../src' ;
+} from "../../src/index.js" ;
 
 const errors = [
 	Error ,

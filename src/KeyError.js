@@ -1,3 +1,3 @@
-import customError from './customError' ;
+import customError from "./customError.js" ;
 
 export default customError('KeyError') ;
