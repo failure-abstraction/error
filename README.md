@@ -1,4 +1,4 @@
-[@aureooms/js-error](https://aureooms.github.io/js-error)
+:boom: [@aureooms/js-error](https://aureooms.github.io/js-error)
 ==
 
 Error objects for JavaScript.
