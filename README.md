@@ -1,4 +1,4 @@
-[@aureooms/js-error](http://aureooms.github.io/js-error)
+[@aureooms/js-error](https://aureooms.github.io/js-error)
 ==
 
 Error objects for JavaScript.
@@ -30,5 +30,5 @@ import {
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-error/main.svg)](https://codecov.io/gh/aureooms/js-error)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/technical_debt)
-[![Documentation](http://aureooms.github.io/js-error/badge.svg)](http://aureooms.github.io/js-error/source.html)
+[![Documentation](https://aureooms.github.io/js-error/badge.svg)](https://aureooms.github.io/js-error/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-error)](https://bundlephobia.com/result?p=@aureooms/js-error)
