@@ -1,3 +1,3 @@
-import customError from "./customError.js" ;
+import customError from './customError.js';
 
-export default customError('IndexError') ;
+export default customError('IndexError');

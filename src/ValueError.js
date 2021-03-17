@@ -1,3 +1,3 @@
-import customError from "./customError.js" ;
+import customError from './customError.js';
 
-export default customError('ValueError') ;
+export default customError('ValueError');

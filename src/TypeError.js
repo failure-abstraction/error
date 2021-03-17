@@ -1,1 +1,1 @@
-export default TypeError ;
+export default TypeError;

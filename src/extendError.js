@@ -1,33 +1,32 @@
-export default function extendError ( parent, name ) {
+export default function extendError(parent, name) {
+	// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 
-	// see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
+	const CustomError = function (...parameters) {
+		const instance = new Error(...parameters);
+		instance.name = name;
+		Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
+		if (Error.captureStackTrace) {
+			Error.captureStackTrace(instance, CustomError);
+		}
 
-	const CustomError = function (...params) {
-	  const instance = new Error(...params);
-	  instance.name = name;
-	  Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
-	  if (Error.captureStackTrace) {
-		Error.captureStackTrace(instance, CustomError);
-	  }
-	  return instance;
-	}
+		return instance;
+	};
 
 	CustomError.prototype = Object.create(Error.prototype, {
-	  constructor: {
-		value: Error,
-		enumerable: false,
-		writable: true,
-		configurable: true
-	  }
+		constructor: {
+			value: Error,
+			enumerable: false,
+			writable: true,
+			configurable: true,
+		},
 	});
 
-	if (Object.setPrototypeOf){
-	  Object.setPrototypeOf(CustomError, Error);
+	if (Object.setPrototypeOf) {
+		Object.setPrototypeOf(CustomError, Error);
 	} else {
-	  // eslint-disable-next-line no-proto
-	  CustomError.__proto__ = Error;
+		// eslint-disable-next-line no-proto
+		CustomError.__proto__ = Error;
 	}
 
-	return CustomError ;
-
+	return CustomError;
 }

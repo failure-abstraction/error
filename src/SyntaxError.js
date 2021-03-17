@@ -1,1 +1,1 @@
-export default SyntaxError ;
+export default SyntaxError;
