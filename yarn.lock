@@ -1327,10 +1327,10 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@js-library/commitlint-config@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@js-library/commitlint-config/-/commitlint-config-0.0.3.tgz#4ffa7c5cee08e1a947e54d41e0f10f56a50928a2"
-  integrity sha512-45eqMFZt8MbZt0/7VBI9PXu3Ms80v3jKvT1Noj47UDx6YftPClvV3VwDxCfr4muwyhzOErYm2r7k3ETQ1ehxJw==
+"@js-library/commitlint-config@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@js-library/commitlint-config/-/commitlint-config-0.0.4.tgz#5243a58b0d4ad36999d4b944c7770c50658c68f5"
+  integrity sha512-l6un9f0HmIJZswqGe5H/HGBkENpqBQv1b36bdLZLXhZEZBTlm2Chbv3J1hJ2kNG8ogh+EFV5nUYQnL3MefLSDQ==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
