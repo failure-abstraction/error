@@ -34,6 +34,7 @@ const macro = (t, SpecificError) => {
 		},
 		{instanceOf: SpecificError},
 	);
+	t.is(SpecificError.captureStackTrace, Error.captureStackTrace);
 };
 
 macro.title = (title, SpecificError) => title || new SpecificError().name;
