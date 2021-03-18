@@ -4,12 +4,11 @@ export default function extendError(Error, name) {
 	const CustomError = function (...parameters) {
 		const instance = new Error(...parameters);
 		instance.name = name;
-		Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
 		if (Error.captureStackTrace) {
 			Error.captureStackTrace(instance, CustomError);
 		}
 
-		return instance;
+		return Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
 	};
 
 	CustomError.prototype = Object.create(Error.prototype, {
@@ -21,7 +20,5 @@ export default function extendError(Error, name) {
 		},
 	});
 
-	Object.setPrototypeOf(CustomError, Error);
-
-	return CustomError;
+	return Object.setPrototypeOf(CustomError, Error);
 }
