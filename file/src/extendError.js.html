@@ -36,18 +36,17 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/extendError.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export default function extendError(parent, name) {
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export default function extendError(Error, name) {
 	// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 
 	const CustomError = function (...parameters) {
 		const instance = new Error(...parameters);
 		instance.name = name;
-		Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
 		if (Error.captureStackTrace) {
 			Error.captureStackTrace(instance, CustomError);
 		}
 
-		return instance;
+		return Object.setPrototypeOf(instance, Object.getPrototypeOf(this));
 	};
 
 	CustomError.prototype = Object.create(Error.prototype, {
@@ -59,9 +58,7 @@
 		},
 	});
 
-	Object.setPrototypeOf(CustomError, Error);
-
-	return CustomError;
+	return Object.setPrototypeOf(CustomError, Error);
 }
 </code></pre>
 
