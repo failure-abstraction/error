@@ -1,4 +1,4 @@
-export default function extendError(parent, name) {
+export default function extendError(Error, name) {
 	// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 
 	const CustomError = function (...parameters) {
