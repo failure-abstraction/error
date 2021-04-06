@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-error",
   "description": "Error objects for JavaScript",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "license": "AGPL-3.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "homepage": "https://aureooms.github.io/js-error",
