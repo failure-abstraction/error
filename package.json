@@ -6,11 +6,11 @@
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "homepage": "https://make-github-pseudonymous-again.github.io/js-error",
   "repository": {
-    "url": "https://github.com/aureooms/js-error",
+    "url": "https://github.com/make-github-pseudonymous-again/js-error",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-error/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-error/issues"
   },
   "keywords": [
     "Error",
