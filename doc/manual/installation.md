@@ -8,15 +8,15 @@ or [jspm](https://jspm.org/docs).
 
 ### yarn
 ```terminal
-yarn add @aureooms/js-error
+yarn add @failure-abstraction/error
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-error --save
+npm install @failure-abstraction/error --save
 ```
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-error
+jspm install npm:@failure-abstraction/error
 ```

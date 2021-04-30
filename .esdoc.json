@@ -17,7 +17,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-error"
+          "title": "@failure-abstraction/error"
         },
         "test": {
           "type": "ava",

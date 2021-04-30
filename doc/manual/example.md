@@ -1,13 +1,14 @@
 # Examples
 
-> More examples in [the test files](https://github.com/make-github-pseudonymous-again/js-error/tree/main/test/src).
+> More examples in [the test files](https://github.com/failure-abstraction/error/tree/main/test/src).
 
 
 ## StopIteration
 
 ```js
-import { iter , next } from '@aureooms/js-itertools' ;
-import { StopIteration } from '@aureooms/js-error' ;
+import { iter } from '@iterable-iterator/iter' ;
+import { next } from '@nextable-nextator/next' ;
+import { StopIteration } from '@failure-abstraction/error' ;
 
 const data = [] ;
 const it = iter(data) ;

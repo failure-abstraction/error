@@ -9,7 +9,7 @@ import 'regenerator-runtime/runtime.js' ;
 
 Then, import the library where needed
 ```js
-const { ... } = require( '@aureooms/js-error' ) ;
+const { ... } = require( '@failure-abstraction/error' ) ;
 // or
-import { ... } from '@aureooms/js-error' ;
+import { ... } from '@failure-abstraction/error' ;
 ```

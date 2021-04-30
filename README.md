@@ -1,9 +1,9 @@
-:boom: [@aureooms/js-error](https://make-github-pseudonymous-again.github.io/js-error)
+:boom: [@failure-abstraction/error](https://functional-abstraction.github.io/error)
 ==
 
 Error objects for JavaScript.
-See [docs](https://make-github-pseudonymous-again.github.io/js-error/index.html).
-Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).
+See [docs](https://functional-abstraction.github.io/error/index.html).
+Parent is [js-library](https://github.com/failure-abstraction/library).
 
 ```js
 import {
@@ -15,20 +15,20 @@ import {
 	TypeError ,
 	ValueError ,
 	StopIteration ,
-} from '@aureooms/js-error' ;
+} from '@failure-abstraction/error' ;
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-error.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-error/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-error.svg)](https://www.npmjs.org/package/@aureooms/js-error)
-[![Tests](https://img.shields.io/github/workflow/status/make-github-pseudonymous-again/js-error/ci:test?event=push&label=tests)](https://github.com/make-github-pseudonymous-again/js-error/actions/workflows/ci:test.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/david/make-github-pseudonymous-again/js-error.svg)](https://david-dm.org/make-github-pseudonymous-again/js-error)
-[![Dev dependencies](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-error.svg)](https://david-dm.org/make-github-pseudonymous-again/js-error?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-error.svg)](https://github.com/make-github-pseudonymous-again/js-error/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-error.svg)](https://www.npmjs.org/package/@aureooms/js-error)
+[![License](https://img.shields.io/github/license/failure-abstraction/error.svg)](https://raw.githubusercontent.com/failure-abstraction/error/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@failure-abstraction/error.svg)](https://www.npmjs.org/package/@failure-abstraction/error)
+[![Tests](https://img.shields.io/github/workflow/status/failure-abstraction/error/ci:test?event=push&label=tests)](https://github.com/failure-abstraction/error/actions/workflows/ci:test.yml?query=branch:main)
+[![Dependencies](https://img.shields.io/david/failure-abstraction/error.svg)](https://david-dm.org/failure-abstraction/error)
+[![Dev dependencies](https://img.shields.io/david/dev/failure-abstraction/error.svg)](https://david-dm.org/failure-abstraction/error?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/failure-abstraction/error.svg)](https://github.com/failure-abstraction/error/issues)
+[![Downloads](https://img.shields.io/npm/dm/@failure-abstraction/error.svg)](https://www.npmjs.org/package/@failure-abstraction/error)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-error.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-error/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-error.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-error/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-error/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-error)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-error.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-error/trends/technical_debt)
-[![Documentation](https://make-github-pseudonymous-again.github.io/js-error/badge.svg)](https://make-github-pseudonymous-again.github.io/js-error/source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-error)](https://bundlephobia.com/result?p=@aureooms/js-error)
+[![Code issues](https://img.shields.io/codeclimate/issues/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/failure-abstraction/error/main.svg)](https://codecov.io/gh/failure-abstraction/error)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/trends/technical_debt)
+[![Documentation](https://functional-abstraction.github.io/error/badge.svg)](https://functional-abstraction.github.io/error/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@failure-abstraction/error)](https://bundlephobia.com/result?p=@failure-abstraction/error)

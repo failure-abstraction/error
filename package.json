@@ -1,16 +1,16 @@
 {
-  "name": "@aureooms/js-error",
+  "name": "@failure-abstraction/error",
   "description": "Error objects for JavaScript",
   "version": "5.0.3",
   "license": "AGPL-3.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
-  "homepage": "https://make-github-pseudonymous-again.github.io/js-error",
+  "author": "make-github-pseudonymous-again",
+  "homepage": "https://functional-abstraction.github.io/error",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-error",
+    "url": "https://github.com/failure-abstraction/error",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-error/issues"
+    "url": "https://github.com/failure-abstraction/error/issues"
   },
   "keywords": [
     "Error",
