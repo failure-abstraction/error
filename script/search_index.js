@@ -1,14 +1,14 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-error/src/customerror.js~customerror",
+    "@failure-abstraction/error/src/customerror.js~customerror",
     "function/index.html#static-function-customError",
-    "<span>customError</span> <span class=\"search-result-import-path\">@aureooms/js-error/src/customError.js</span>",
+    "<span>customError</span> <span class=\"search-result-import-path\">@failure-abstraction/error/src/customError.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-error/src/extenderror.js~extenderror",
+    "@failure-abstraction/error/src/extenderror.js~extenderror",
     "function/index.html#static-function-extendError",
-    "<span>extendError</span> <span class=\"search-result-import-path\">@aureooms/js-error/src/extendError.js</span>",
+    "<span>extendError</span> <span class=\"search-result-import-path\">@failure-abstraction/error/src/extendError.js</span>",
     "function"
   ],
   [

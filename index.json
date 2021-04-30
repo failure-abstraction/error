@@ -569,7 +569,7 @@
     "name": "src/Error.js",
     "content": "export default Error;\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/Error.js",
+    "longname": "/home/runner/work/error/error/src/Error.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -580,7 +580,7 @@
     "name": "src/IndexError.js",
     "content": "import customError from './customError.js';\n\nexport default customError('IndexError');\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/IndexError.js",
+    "longname": "/home/runner/work/error/error/src/IndexError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -591,7 +591,7 @@
     "name": "src/KeyError.js",
     "content": "import customError from './customError.js';\n\nexport default customError('KeyError');\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/KeyError.js",
+    "longname": "/home/runner/work/error/error/src/KeyError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -602,7 +602,7 @@
     "name": "src/NotImplementedError.js",
     "content": "import customError from './customError.js';\n\nexport default customError('NotImplementedError');\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/NotImplementedError.js",
+    "longname": "/home/runner/work/error/error/src/NotImplementedError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -613,7 +613,7 @@
     "name": "src/StopIteration.js",
     "content": "import customError from './customError.js';\n\nexport default customError('StopIteration');\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/StopIteration.js",
+    "longname": "/home/runner/work/error/error/src/StopIteration.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -624,7 +624,7 @@
     "name": "src/SyntaxError.js",
     "content": "export default SyntaxError;\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/SyntaxError.js",
+    "longname": "/home/runner/work/error/error/src/SyntaxError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -635,7 +635,7 @@
     "name": "src/TypeError.js",
     "content": "export default TypeError;\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/TypeError.js",
+    "longname": "/home/runner/work/error/error/src/TypeError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -646,7 +646,7 @@
     "name": "src/ValueError.js",
     "content": "import customError from './customError.js';\n\nexport default customError('ValueError');\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/ValueError.js",
+    "longname": "/home/runner/work/error/error/src/ValueError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -657,7 +657,7 @@
     "name": "src/customError.js",
     "content": "import Error from './Error.js';\nimport extendError from './extendError.js';\n\nconst customError = (name) => extendError(Error, name);\nexport default customError;\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/customError.js",
+    "longname": "/home/runner/work/error/error/src/customError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -673,7 +673,7 @@
     "longname": "src/customError.js~customError",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-error/src/customError.js",
+    "importPath": "@failure-abstraction/error/src/customError.js",
     "importStyle": "customError",
     "description": null,
     "lineNumber": 4,
@@ -694,7 +694,7 @@
     "name": "src/extendError.js",
     "content": "export default function extendError(Error, name) {\n\t// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error\n\n\tconst CustomError = function (...parameters) {\n\t\tconst instance = new Error(...parameters);\n\t\tinstance.name = name;\n\t\tif (Error.captureStackTrace) {\n\t\t\tError.captureStackTrace(instance, CustomError);\n\t\t}\n\n\t\treturn Object.setPrototypeOf(instance, Object.getPrototypeOf(this));\n\t};\n\n\tCustomError.prototype = Object.create(Error.prototype, {\n\t\tconstructor: {\n\t\t\tvalue: Error,\n\t\t\tenumerable: false,\n\t\t\twritable: true,\n\t\t\tconfigurable: true,\n\t\t},\n\t});\n\n\treturn Object.setPrototypeOf(CustomError, Error);\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/extendError.js",
+    "longname": "/home/runner/work/error/error/src/extendError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -710,7 +710,7 @@
     "longname": "src/extendError.js~extendError",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-error/src/extendError.js",
+    "importPath": "@failure-abstraction/error/src/extendError.js",
     "importStyle": "extendError",
     "description": null,
     "lineNumber": 1,
@@ -741,23 +741,23 @@
     "name": "src/index.js",
     "content": "export {default as Error} from './Error.js';\nexport {default as IndexError} from './IndexError.js';\nexport {default as KeyError} from './KeyError.js';\nexport {default as NotImplementedError} from './NotImplementedError.js';\nexport {default as StopIteration} from './StopIteration.js';\nexport {default as SyntaxError} from './SyntaxError.js';\nexport {default as TypeError} from './TypeError.js';\nexport {default as ValueError} from './ValueError.js';\nexport {default as customError} from './customError.js';\nexport {default as extendError} from './extendError.js';\n",
     "static": true,
-    "longname": "/home/runner/work/js-error/js-error/src/index.js",
+    "longname": "/home/runner/work/error/error/src/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "kind": "index",
-    "content": ":boom: [@aureooms/js-error](https://aureooms.github.io/js-error)\n==\n\nError objects for JavaScript.\nSee [docs](https://aureooms.github.io/js-error/index.html).\nParent is [js-library](https://github.com/aureooms/js-library).\n\n```js\nimport {\n\tError ,\n\tSyntaxError ,\n\tIndexError ,\n\tKeyError ,\n\tNotImplementedError ,\n\tTypeError ,\n\tValueError ,\n\tStopIteration ,\n} from '@aureooms/js-error' ;\n```\n\n[![License](https://img.shields.io/github/license/aureooms/js-error.svg)](https://raw.githubusercontent.com/aureooms/js-error/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@aureooms/js-error.svg)](https://www.npmjs.org/package/@aureooms/js-error)\n[![Tests](https://img.shields.io/github/workflow/status/aureooms/js-error/ci:test?event=push&label=tests)](https://github.com/aureooms/js-error/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/aureooms/js-error.svg)](https://david-dm.org/aureooms/js-error)\n[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-error.svg)](https://david-dm.org/aureooms/js-error?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-error.svg)](https://github.com/aureooms/js-error/issues)\n[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-error.svg)](https://www.npmjs.org/package/@aureooms/js-error)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-error/main.svg)](https://codecov.io/gh/aureooms/js-error)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-error.svg)](https://codeclimate.com/github/aureooms/js-error/trends/technical_debt)\n[![Documentation](https://aureooms.github.io/js-error/badge.svg)](https://aureooms.github.io/js-error/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-error)](https://bundlephobia.com/result?p=@aureooms/js-error)\n",
-    "longname": "/home/runner/work/js-error/js-error/README.md",
+    "content": ":boom: [@failure-abstraction/error](https://functional-abstraction.github.io/error)\n==\n\nError objects for JavaScript.\nSee [docs](https://functional-abstraction.github.io/error/index.html).\nParent is [js-library](https://github.com/failure-abstraction/library).\n\n```js\nimport {\n\tError ,\n\tSyntaxError ,\n\tIndexError ,\n\tKeyError ,\n\tNotImplementedError ,\n\tTypeError ,\n\tValueError ,\n\tStopIteration ,\n} from '@failure-abstraction/error' ;\n```\n\n[![License](https://img.shields.io/github/license/failure-abstraction/error.svg)](https://raw.githubusercontent.com/failure-abstraction/error/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@failure-abstraction/error.svg)](https://www.npmjs.org/package/@failure-abstraction/error)\n[![Tests](https://img.shields.io/github/workflow/status/failure-abstraction/error/ci:test?event=push&label=tests)](https://github.com/failure-abstraction/error/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/failure-abstraction/error.svg)](https://david-dm.org/failure-abstraction/error)\n[![Dev dependencies](https://img.shields.io/david/dev/failure-abstraction/error.svg)](https://david-dm.org/failure-abstraction/error?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/failure-abstraction/error.svg)](https://github.com/failure-abstraction/error/issues)\n[![Downloads](https://img.shields.io/npm/dm/@failure-abstraction/error.svg)](https://www.npmjs.org/package/@failure-abstraction/error)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/failure-abstraction/error/main.svg)](https://codecov.io/gh/failure-abstraction/error)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/trends/technical_debt)\n[![Documentation](https://functional-abstraction.github.io/error/badge.svg)](https://functional-abstraction.github.io/error/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@failure-abstraction/error)](https://bundlephobia.com/result?p=@failure-abstraction/error)\n",
+    "longname": "/home/runner/work/error/error/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@aureooms/js-error\",\n  \"description\": \"Error objects for JavaScript\",\n  \"version\": \"5.0.3\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"homepage\": \"https://aureooms.github.io/js-error\",\n  \"repository\": {\n    \"url\": \"https://github.com/aureooms/js-error\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-error/issues\"\n  },\n  \"keywords\": [\n    \"Error\",\n    \"IndexError\",\n    \"KeyError\",\n    \"NotImplementedError\",\n    \"StopIteration\",\n    \"SyntaxError\",\n    \"TypeError\",\n    \"ValueError\",\n    \"error\",\n    \"exception\",\n    \"javascript\",\n    \"js\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.13.14\",\n    \"@babel/preset-env\": \"7.13.12\",\n    \"@babel/register\": \"7.13.14\",\n    \"@commitlint/cli\": \"12.1.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.0\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"10.5.4\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.4.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.38.2\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": [\n        \"error\",\n        {\n          \"cases\": {\n            \"camelCase\": true,\n            \"pascalCase\": true\n          }\n        }\n      ]\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
-    "longname": "/home/runner/work/js-error/js-error/package.json",
+    "content": "{\n  \"name\": \"@failure-abstraction/error\",\n  \"description\": \"Error objects for JavaScript\",\n  \"version\": \"5.0.4\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://functional-abstraction.github.io/error\",\n  \"repository\": {\n    \"url\": \"https://github.com/failure-abstraction/error\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/failure-abstraction/error/issues\"\n  },\n  \"keywords\": [\n    \"Error\",\n    \"IndexError\",\n    \"KeyError\",\n    \"NotImplementedError\",\n    \"StopIteration\",\n    \"SyntaxError\",\n    \"TypeError\",\n    \"ValueError\",\n    \"error\",\n    \"exception\",\n    \"javascript\",\n    \"js\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@babel/core\": \"7.14.0\",\n    \"@babel/preset-env\": \"7.14.0\",\n    \"@babel/register\": \"7.13.16\",\n    \"@commitlint/cli\": \"12.1.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.1\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"10.5.4\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.5.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.39.1\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": [\n        \"error\",\n        {\n          \"cases\": {\n            \"camelCase\": true,\n            \"pascalCase\": true\n          }\n        }\n      ]\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/error/error/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"
@@ -772,7 +772,7 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-error/js-error/doc/manual/overview.md",
+    "longname": "/home/runner/work/error/error/doc/manual/overview.md",
     "name": "./doc/manual/overview.md",
     "content": "# Overview\n",
     "static": true,
@@ -780,25 +780,25 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-error/js-error/doc/manual/installation.md",
+    "longname": "/home/runner/work/error/error/doc/manual/installation.md",
     "name": "./doc/manual/installation.md",
-    "content": "# Installation\n\nCan be managed using\n[yarn](https://yarnpkg.com/en/docs),\n[npm](https://docs.npmjs.com),\nor [jspm](https://jspm.org/docs).\n\n\n### yarn\n```terminal\nyarn add @aureooms/js-error\n```\n\n### npm\n```terminal\nnpm install @aureooms/js-error --save\n```\n\n### jspm\n```terminal\njspm install npm:@aureooms/js-error\n```\n",
+    "content": "# Installation\n\nCan be managed using\n[yarn](https://yarnpkg.com/en/docs),\n[npm](https://docs.npmjs.com),\nor [jspm](https://jspm.org/docs).\n\n\n### yarn\n```terminal\nyarn add @failure-abstraction/error\n```\n\n### npm\n```terminal\nnpm install @failure-abstraction/error --save\n```\n\n### jspm\n```terminal\njspm install npm:@failure-abstraction/error\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-error/js-error/doc/manual/usage.md",
+    "longname": "/home/runner/work/error/error/doc/manual/usage.md",
     "name": "./doc/manual/usage.md",
-    "content": "# Usage\n\nFirst, require the polyfill at the entry point of your application\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen, import the library where needed\n```js\nconst { ... } = require( '@aureooms/js-error' ) ;\n// or\nimport { ... } from '@aureooms/js-error' ;\n```\n",
+    "content": "# Usage\n\nFirst, require the polyfill at the entry point of your application\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen, import the library where needed\n```js\nconst { ... } = require( '@failure-abstraction/error' ) ;\n// or\nimport { ... } from '@failure-abstraction/error' ;\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-error/js-error/doc/manual/example.md",
+    "longname": "/home/runner/work/error/error/doc/manual/example.md",
     "name": "./doc/manual/example.md",
-    "content": "# Examples\n\n> More examples in [the test files](https://github.com/aureooms/js-error/tree/main/test/src).\n\n\n## StopIteration\n\n```js\nimport { iter , next } from '@aureooms/js-itertools' ;\nimport { StopIteration } from '@aureooms/js-error' ;\n\nconst data = [] ;\nconst it = iter(data) ;\n\ntry {\n\tnext(it);\n}\ncatch ( e ) {\n  if (e instanceof StopIteration) {\n    ...\n  }\n}\n```\n",
+    "content": "# Examples\n\n> More examples in [the test files](https://github.com/failure-abstraction/error/tree/main/test/src).\n\n\n## StopIteration\n\n```js\nimport { iter } from '@iterable-iterator/iter' ;\nimport { next } from '@nextable-nextator/next' ;\nimport { StopIteration } from '@failure-abstraction/error' ;\n\nconst data = [] ;\nconst it = iter(data) ;\n\ntry {\n\tnext(it);\n}\ncatch ( e ) {\n  if (e instanceof StopIteration) {\n    ...\n  }\n}\n```\n",
     "static": true,
     "access": "public"
   }
