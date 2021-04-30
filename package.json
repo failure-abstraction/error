@@ -1,7 +1,7 @@
 {
   "name": "@failure-abstraction/error",
   "description": "Error objects for JavaScript",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
   "homepage": "https://failure-abstraction.github.io/error",
