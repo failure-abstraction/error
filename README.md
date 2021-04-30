@@ -1,8 +1,8 @@
-:boom: [@failure-abstraction/error](https://functional-abstraction.github.io/error)
+:boom: [@failure-abstraction/error](https://failure-abstraction.github.io/error)
 ==
 
 Error objects for JavaScript.
-See [docs](https://functional-abstraction.github.io/error/index.html).
+See [docs](https://failure-abstraction.github.io/error/index.html).
 Parent is [js-library](https://github.com/failure-abstraction/library).
 
 ```js
@@ -30,5 +30,5 @@ import {
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/failure-abstraction/error/main.svg)](https://codecov.io/gh/failure-abstraction/error)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/failure-abstraction/error.svg)](https://codeclimate.com/github/failure-abstraction/error/trends/technical_debt)
-[![Documentation](https://functional-abstraction.github.io/error/badge.svg)](https://functional-abstraction.github.io/error/source.html)
+[![Documentation](https://failure-abstraction.github.io/error/badge.svg)](https://failure-abstraction.github.io/error/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@failure-abstraction/error)](https://bundlephobia.com/result?p=@failure-abstraction/error)
