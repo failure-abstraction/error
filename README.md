@@ -3,7 +3,7 @@
 
 Error objects for JavaScript.
 See [docs](https://failure-abstraction.github.io/error/index.html).
-Parent is [js-library](https://github.com/failure-abstraction/library).
+Parent is [js-library](https://github.com/make-github-pseudonymous-again/js-library).
 
 ```js
 import {
