@@ -9,7 +9,7 @@ import {
 	NotImplementedError,
 	ValueError,
 	StopIteration,
-} from '../../src/index.js';
+} from '#module';
 
 const errors = [
 	Error,
