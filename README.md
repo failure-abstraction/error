@@ -21,8 +21,7 @@ import {
 [![License](https://img.shields.io/github/license/failure-abstraction/error.svg)](https://raw.githubusercontent.com/failure-abstraction/error/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@failure-abstraction/error.svg)](https://www.npmjs.org/package/@failure-abstraction/error)
 [![Tests](https://img.shields.io/github/workflow/status/failure-abstraction/error/ci:test?event=push&label=tests)](https://github.com/failure-abstraction/error/actions/workflows/ci:test.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/david/failure-abstraction/error.svg)](https://david-dm.org/failure-abstraction/error)
-[![Dev dependencies](https://img.shields.io/david/dev/failure-abstraction/error.svg)](https://david-dm.org/failure-abstraction/error?type=dev)
+[![Dependencies](https://img.shields.io/librariesio/github/failure-abstraction/error.svg)](https://github.com/failure-abstraction/error/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/failure-abstraction/error.svg)](https://github.com/failure-abstraction/error/issues)
 [![Downloads](https://img.shields.io/npm/dm/@failure-abstraction/error.svg)](https://www.npmjs.org/package/@failure-abstraction/error)
 
